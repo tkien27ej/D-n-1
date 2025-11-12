@@ -32,6 +32,8 @@ public class HoaDon extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
 
+        setPreferredSize(new java.awt.Dimension(700, 500));
+
         jLabel1.setText("Bán Hàng");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
