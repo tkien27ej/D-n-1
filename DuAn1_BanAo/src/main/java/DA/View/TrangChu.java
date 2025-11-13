@@ -32,32 +32,72 @@ public class TrangChu extends javax.swing.JFrame {
     private void initComponents() {
 
         Home = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btn_viewSanPham = new javax.swing.JButton();
+        btn_ViewHoaDon = new javax.swing.JButton();
+        btn_ViewNhanVien = new javax.swing.JButton();
+        btn_ViewKhachHang = new javax.swing.JButton();
+        btn_ViewVocher = new javax.swing.JButton();
+        btn_ViewThongKe = new javax.swing.JButton();
         View = new javax.swing.JPanel();
-        sanPham1 = new DA.View.SanPham();
         hoaDon1 = new DA.View.HoaDon();
+        sanPham1 = new DA.View.SanPham();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Home.setBackground(new java.awt.Color(51, 255, 255));
 
-        jButton1.setText("Sản Phẩm");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_viewSanPham.setText("Sản Phẩm");
+        btn_viewSanPham.setBorderPainted(false);
+        btn_viewSanPham.setContentAreaFilled(false);
+        btn_viewSanPham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_viewSanPhamActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Hóa Đơn");
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_ViewHoaDon.setText("Hóa Đơn");
+        btn_ViewHoaDon.setBorderPainted(false);
+        btn_ViewHoaDon.setContentAreaFilled(false);
+        btn_ViewHoaDon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_ViewHoaDonActionPerformed(evt);
+            }
+        });
+
+        btn_ViewNhanVien.setText("Nhân Viên");
+        btn_ViewNhanVien.setBorderPainted(false);
+        btn_ViewNhanVien.setContentAreaFilled(false);
+        btn_ViewNhanVien.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ViewNhanVienActionPerformed(evt);
+            }
+        });
+
+        btn_ViewKhachHang.setText("Khách Hàng");
+        btn_ViewKhachHang.setBorderPainted(false);
+        btn_ViewKhachHang.setContentAreaFilled(false);
+        btn_ViewKhachHang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ViewKhachHangActionPerformed(evt);
+            }
+        });
+
+        btn_ViewVocher.setText("Vocher");
+        btn_ViewVocher.setBorderPainted(false);
+        btn_ViewVocher.setContentAreaFilled(false);
+        btn_ViewVocher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ViewVocherActionPerformed(evt);
+            }
+        });
+
+        btn_ViewThongKe.setText("Thống Kê");
+        btn_ViewThongKe.setBorderPainted(false);
+        btn_ViewThongKe.setContentAreaFilled(false);
+        btn_ViewThongKe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ViewThongKeActionPerformed(evt);
             }
         });
 
@@ -65,22 +105,38 @@ public class TrangChu extends javax.swing.JFrame {
         Home.setLayout(HomeLayout);
         HomeLayout.setHorizontalGroup(
             HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+            .addGroup(HomeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn_ViewNhanVien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_ViewKhachHang, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                    .addComponent(btn_ViewVocher, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_ViewThongKe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_viewSanPham, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                    .addComponent(btn_ViewHoaDon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         HomeLayout.setVerticalGroup(
             HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HomeLayout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(141, 141, 141)
+                .addComponent(btn_viewSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btn_ViewHoaDon, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btn_ViewNhanVien, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btn_ViewKhachHang, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btn_ViewVocher, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btn_ViewThongKe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         View.setLayout(new java.awt.CardLayout());
-        View.add(sanPham1, "SanPham");
         View.add(hoaDon1, "HoaDon");
+        View.add(sanPham1, "SanPham");
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 255));
 
@@ -104,7 +160,7 @@ public class TrangChu extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, 925, Short.MAX_VALUE)))
+                    .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,15 +174,31 @@ public class TrangChu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_viewSanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_viewSanPhamActionPerformed
         // TODO add your handling code here:
         cardLayout.show(View,"SanPham");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_viewSanPhamActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_ViewHoaDonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewHoaDonActionPerformed
         // TODO add your handling code here:
         cardLayout.show(View,"HoaDon");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btn_ViewHoaDonActionPerformed
+
+    private void btn_ViewNhanVienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewNhanVienActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ViewNhanVienActionPerformed
+
+    private void btn_ViewKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewKhachHangActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ViewKhachHangActionPerformed
+
+    private void btn_ViewVocherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewVocherActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ViewVocherActionPerformed
+
+    private void btn_ViewThongKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewThongKeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ViewThongKeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,9 +238,13 @@ public class TrangChu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Home;
     private javax.swing.JPanel View;
+    private javax.swing.JButton btn_ViewHoaDon;
+    private javax.swing.JButton btn_ViewKhachHang;
+    private javax.swing.JButton btn_ViewNhanVien;
+    private javax.swing.JButton btn_ViewThongKe;
+    private javax.swing.JButton btn_ViewVocher;
+    private javax.swing.JButton btn_viewSanPham;
     private DA.View.HoaDon hoaDon1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     private DA.View.SanPham sanPham1;
     // End of variables declaration//GEN-END:variables
