@@ -33,9 +33,6 @@ public class Home extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jSplitPane2 = new javax.swing.JSplitPane();
         Home = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        btnHoaDon = new javax.swing.JButton();
-        btnSanPham = new javax.swing.JButton();
         View = new javax.swing.JPanel();
         sanPham1 = new DA.View.SanPham();
         hoaDon1 = new DA.View.HoaDon();
@@ -54,57 +51,20 @@ public class Home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 600));
 
-        jSplitPane2.setMinimumSize(new java.awt.Dimension(600, 900));
+        jSplitPane2.setBackground(new java.awt.Color(238, 238, 238));
+        jSplitPane2.setDividerSize(1);
 
-        Home.setBackground(new java.awt.Color(153, 153, 153));
-        Home.setPreferredSize(new java.awt.Dimension(200, 500));
-
-        jLabel1.setText("Home");
-
-        btnHoaDon.setText("Hóa Đơn");
-        btnHoaDon.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHoaDonActionPerformed(evt);
-            }
-        });
-
-        btnSanPham.setText("Sản Phẩm");
-        btnSanPham.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSanPhamActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
-        Home.setLayout(HomeLayout);
-        HomeLayout.setHorizontalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HomeLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnSanPham)
-                        .addComponent(btnHoaDon)))
-                .addGap(26, 26, 26))
-        );
-        HomeLayout.setVerticalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(btnSanPham)
-                .addGap(93, 93, 93)
-                .addComponent(btnHoaDon)
-                .addGap(0, 645, Short.MAX_VALUE))
-        );
-
+        Home.setBackground(new java.awt.Color(51, 51, 51));
+        Home.setPreferredSize(new java.awt.Dimension(150, 400));
         jSplitPane2.setLeftComponent(Home);
 
-        View.setPreferredSize(new java.awt.Dimension(700, 500));
+        View.setPreferredSize(new java.awt.Dimension(700, 400));
         View.setLayout(new java.awt.CardLayout());
+
+        sanPham1.setPreferredSize(new java.awt.Dimension(700, 400));
         View.add(sanPham1, "SanPham");
+
+        hoaDon1.setPreferredSize(new java.awt.Dimension(700, 400));
         View.add(hoaDon1, "HoaDon");
 
         jSplitPane2.setRightComponent(View);
@@ -178,6 +138,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel View;
     private javax.swing.JButton btnHoaDon;
     private javax.swing.JButton btnSanPham;
+    private javax.swing.Box.Filler filler1;
+    private javax.swing.Box.Filler filler2;
+    private javax.swing.Box.Filler filler3;
+    private javax.swing.Box.Filler filler4;
     private DA.View.HoaDon hoaDon1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel3;
