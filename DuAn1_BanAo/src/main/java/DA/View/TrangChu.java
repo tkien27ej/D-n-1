@@ -39,7 +39,6 @@ public class TrangChu extends javax.swing.JFrame {
         btn_ViewVocher = new javax.swing.JButton();
         btn_ViewThongKe = new javax.swing.JButton();
         View = new javax.swing.JPanel();
-        hoaDon1 = new DA.View.HoaDon();
         sanPham1 = new DA.View.SanPham();
         jPanel1 = new javax.swing.JPanel();
 
@@ -135,7 +134,6 @@ public class TrangChu extends javax.swing.JFrame {
         );
 
         View.setLayout(new java.awt.CardLayout());
-        View.add(hoaDon1, "HoaDon");
         View.add(sanPham1, "SanPham");
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 255));
@@ -160,7 +158,7 @@ public class TrangChu extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE)))
+                    .addComponent(View, javax.swing.GroupLayout.PREFERRED_SIZE, 1024, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,7 +166,7 @@ public class TrangChu extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(View, javax.swing.GroupLayout.PREFERRED_SIZE, 595, Short.MAX_VALUE))
+                .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, 595, Short.MAX_VALUE))
         );
 
         pack();
@@ -248,7 +246,6 @@ public class TrangChu extends javax.swing.JFrame {
     private javax.swing.JButton btn_ViewThongKe;
     private javax.swing.JButton btn_ViewVocher;
     private javax.swing.JButton btn_viewSanPham;
-    private DA.View.HoaDon hoaDon1;
     private javax.swing.JPanel jPanel1;
     private DA.View.SanPham sanPham1;
     // End of variables declaration//GEN-END:variables

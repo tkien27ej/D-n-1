@@ -35,7 +35,7 @@ public class Home extends javax.swing.JFrame {
         Home = new javax.swing.JPanel();
         View = new javax.swing.JPanel();
         sanPham1 = new DA.View.SanPham();
-        hoaDon1 = new DA.View.HoaDon();
+        hoaDon1 = new DA.View.FormHoaDon();
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -142,7 +142,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.Box.Filler filler2;
     private javax.swing.Box.Filler filler3;
     private javax.swing.Box.Filler filler4;
-    private DA.View.HoaDon hoaDon1;
+    private DA.View.FormHoaDon hoaDon1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSplitPane jSplitPane2;
