@@ -10,7 +10,7 @@ package com.mycompany.duan1_banao;
  */
 public class DuAn1_BanAo {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+//    public static void main(String[] args) {
+//        System.out.println("Hello World!");
+//    }
 }

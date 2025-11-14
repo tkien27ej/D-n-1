@@ -160,7 +160,7 @@ public class TrangChu extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE)))
+                    .addComponent(View, javax.swing.GroupLayout.PREFERRED_SIZE, 1024, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
