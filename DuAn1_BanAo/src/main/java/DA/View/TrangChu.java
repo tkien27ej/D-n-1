@@ -186,18 +186,22 @@ public class TrangChu extends javax.swing.JFrame {
 
     private void btn_ViewNhanVienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewNhanVienActionPerformed
         // TODO add your handling code here:
+           cardLayout.show(View,"NhanVien");
     }//GEN-LAST:event_btn_ViewNhanVienActionPerformed
 
     private void btn_ViewKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewKhachHangActionPerformed
         // TODO add your handling code here:
+           cardLayout.show(View,"KhachHang");
     }//GEN-LAST:event_btn_ViewKhachHangActionPerformed
 
     private void btn_ViewVocherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewVocherActionPerformed
         // TODO add your handling code here:
+         cardLayout.show(View,"Voucher");
     }//GEN-LAST:event_btn_ViewVocherActionPerformed
 
     private void btn_ViewThongKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewThongKeActionPerformed
         // TODO add your handling code here:
+        cardLayout.show(View,"ThongKe");
     }//GEN-LAST:event_btn_ViewThongKeActionPerformed
 
     /**
